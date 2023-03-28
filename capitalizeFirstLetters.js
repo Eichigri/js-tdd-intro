@@ -21,21 +21,25 @@ function capitalizeFirstLetters(string){
     return output;
 };
 
-// Les tests :
-// capitalizeFirstLetters est une fonction :
+module.exports = capitalizeFirstLetters;
+
+/*
+Les tests :
+capitalizeFirstLetters est une fonction :
 assert.strictEqual( typeof capitalizeFirstLetters, 'function');
 
-// Elle accepte qu'un argument :
+Elle accepte qu'un argument :
 assert.strictEqual(capitalizeFirstLetters.length, 1);
 
-// Elle transforme une lettre correctement :
+Elle transforme une lettre correctement :
 assert.strictEqual(capitalizeFirstLetters('s'), 'S');
 
-// Elle transforme un mot correctement :
+Elle transforme un mot correctement :
 assert.strictEqual(capitalizeFirstLetters('bonJour'), 'BonJour');
 
-// Elle transforme une phrase avec plusieurs mots correctement :
+Elle transforme une phrase avec plusieurs mots correctement :
 assert.strictEqual(capitalizeFirstLetters('i am learning TDD'), 'I Am Learning TDD');
 
-// Et si il y a une chaine vide en argument :
+Et si il y a une chaine vide en argument :
 assert.strictEqual(capitalizeFirstLetters(''),'');
+*/
